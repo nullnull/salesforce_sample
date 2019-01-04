@@ -1,5 +1,6 @@
 <aura:component controller="ExpensesController">
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:handler name="updateExpense" event="c:expensesItemUpdate" action="{!c.handleUpdateExpense}"/>
 
       <aura:attribute name="expenses" type="Expense__c[]"/>
   <aura:attribute
