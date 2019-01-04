@@ -1,3 +1,24 @@
-<aura:component>
-
-</aura:component>	
+<aura:component implements="flexipage:availableForRecordHome, force:hasRecordId">
+  <!--レコードを格納する変数の定義(正確には変数ではなくコンポーネント属性) -->
+  <aura:attribute name="record" type="Object"/>
+  <aura:attribute name="recordRaw" type="Object"/>
+  <aura:attribute name="recordError" type="String"/>
+  <!--レコードの情報を変数に割り当て -->
+  <force:recordData aura:id="record" layoutType="FULL" recordId="{!v.recordId}" mode="VIEW" targetFields="{!v.record}" targetRecord="{!v.recordRaw}" targetError="{!v.recordError}"/>
+  <!-- 表示 -->
+  <div class="Record Details">
+    <h1>Record Details</h1>
+    <p>
+      {!v.record.Name}
+    </p>
+    <p>
+      {!v.record.Phone}
+    </p>
+  </div>
+  <!-- エラー表示 -->
+  <aura:if isTrue="{!not(empty(v.recordError))}">
+    <div class="recordError">
+      {!v.recordError}
+    </div>
+  </aura:if>
+</aura:component>
