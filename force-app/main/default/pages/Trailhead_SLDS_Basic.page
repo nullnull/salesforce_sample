@@ -1,0 +1,51 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+  <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+    <head>
+      <meta charset="utf-8"/>
+      <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+      <title>Salesforce Lightning Design System Trailhead Module</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <!-- Import the Design System style sheet -->
+      <apex:slds />
+    </head>
+    <body>
+      <!-- REQUIRED SLDS WRAPPER -->
+      <div class="slds-scope">
+        <div class="slds-page-header">
+          <div class="slds-page-header__row">
+            <div class="slds-page-header__col-title">
+              <div class="slds-media">
+                <div class="slds-media__figure">
+                  <span class="slds-icon_container slds-icon-standard-opportunity" title="opportunity">
+                    <svg class="slds-icon slds-page-header__icon" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#opportunity"/>
+                    </svg>
+                    <span class="slds-assistive-text">opportunity</span>
+                  </span>
+                </div>
+                <div class="slds-media__body">
+                  <div class="slds-page-header__name">
+                    <div class="slds-page-header__name-title">
+                      <h1>
+                        <span class="slds-page-header__title slds-truncate" title="Rohde Corp - 80,000 Widgets">Rohde Corp - 80,000 Widgets</span>
+                      </h1>
+                    </div>
+                  </div>
+                  <p class="slds-page-header__name-meta">Mark Jaeckal • Unlimited Customer • 11/13/15</p>
+                </div>
+              </div>
+            </div>
+            <div class="slds-page-header__col_actions">
+              <div class="slds-button-group" role="group">
+                <button class="slds-button slds-button_neutral">Refresh</button>
+                <button class="slds-button slds-button_neutral">Edit</button>
+                <button class="slds-button slds-button_neutral">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / REQUIRED SLDS WRAPPER -->
+    </body>
+  </html>
+</apex:page>
