@@ -1,0 +1,15 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Lead",
+                "referenceId": "LeadRef1"
+            },
+            "Status": "Open - Not Contacted",
+            "Company": "Hoge Company",
+            "Name": "Tanaka Masato",
+            "CleanStatus": "Pending",
+            "Phone": "09012341234"
+        }
+    ]
+}
