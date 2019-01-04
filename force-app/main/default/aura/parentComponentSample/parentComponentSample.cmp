@@ -1,0 +1,4 @@
+<aura:component>
+	 This is Parent Component.
+    <c:childComponentSample message="Set from parent"/>
+</aura:component>
