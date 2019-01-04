@@ -25,6 +25,10 @@
         <layout>Expense__c-Expenseレイアウト</layout>
     </layoutAssignments>
     <tabVisibilities>
+        <tab>Expense__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Lead</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
