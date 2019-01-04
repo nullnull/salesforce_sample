@@ -23,12 +23,27 @@
         </div>
       </div>
       <div class="slds-page-header__col_actions">
-        <div class="slds-button-group-row" role="group">
-          <lightning:buttonGroup>
-            <lightning:button label="Refresh" onclick="{! c.handleClick }"/>
-            <lightning:button label="Edit" variant="brand" onclick="{! c.handleClick }"/>
-            <lightning:button label="Save" disabled="true" onclick="{! c.handleClick }"/>
-          </lightning:buttonGroup>
+        <div class="slds-page-header__controls">
+          <div class="slds-page-header__control">
+            <div class="slds-form-element">
+              <label class="slds-checkbox_toggle slds-grid">
+                <span class="slds-form-element__label slds-m-bottom_none">Toggle Label</span>
+                <input name="checkbox-toggle-2" type="checkbox" aria-describedby="checkbox-toggle-2" value="checkbox-toggle-2"/>
+                <span id="checkbox-toggle-2" class="slds-checkbox_faux_container" aria-live="assertive">
+                  <span class="slds-checkbox_faux"></span>
+                  <span class="slds-checkbox_on">Enabled</span>
+                  <span class="slds-checkbox_off">Disabled</span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="slds-page-header__control">
+            <lightning:buttonGroup>
+              <lightning:button label="Refresh" onclick="{! c.handleClick }"/>
+              <lightning:button label="Edit" variant="brand" onclick="{! c.handleClick }"/>
+              <lightning:button label="Save" disabled="true" onclick="{! c.handleClick }"/>
+            </lightning:buttonGroup>
+          </div>
         </div>
       </div>
     </div>
