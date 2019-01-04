@@ -1,5 +1,7 @@
 <aura:component>
     <aura:attribute name="message" type="String"/>
     <p>This is Child Component. </p>
-    <p>Message from parent is : {!v.message}</p>
+    <p>Current message is : {!v.message}</p>
+    
+    <lightning:button label="Set by button" onclick="{!c.handleClick}"/>
 </aura:component>

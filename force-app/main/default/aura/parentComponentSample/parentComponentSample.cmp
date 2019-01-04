@@ -1,4 +1,4 @@
 <aura:component>
 	 This is Parent Component.
-    <c:childComponentSample message="You look nice today."/>
+    <c:childComponentSample message="Set from parent"/>
 </aura:component>
