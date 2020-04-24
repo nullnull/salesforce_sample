@@ -1,0 +1,10 @@
+.THIS {
+}
+
+.THIS .slds-badge--red {
+    background-color: red;
+}
+
+.THIS .slds-badge {
+   vertical-align: middle;
+}
